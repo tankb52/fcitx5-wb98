@@ -10,6 +10,7 @@
 其实我要吐槽一下，虽然提供了码表制作工具`libime_tabledict`，可是使用说明几乎没有，对文本的要求也没写明，从`txt`转换成`dict`时**segmentation fault**出现了好几次，差点我就放弃制作了。  
 
 ## 使用方法  
+以下方法可直接用于 `Debian + KDE5` 环境，其他系统请根据实际情况执行。  
 1. 首先当然需要安装`fcitx5`，推荐同时安装`fcitx5-chinese-addons`。  
 2. 然后将码表文件拷贝到`libime`目录  
 ```sh
