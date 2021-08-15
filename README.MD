@@ -12,18 +12,28 @@
 ## 使用方法  
 以下方法可直接用于 `Debian + KDE5` 环境，其他系统请根据实际情况执行。  
 1. 首先当然需要安装`fcitx5`，推荐同时安装`fcitx5-chinese-addons`。  
-2. 然后将码表文件拷贝到`libime`目录  
+
+2. 生成码表
+
+   ```shell
+   libime_tabledict wb98.txt wb98.main.dict
+   ```
+
+   
+
+3. 然后将码表文件拷贝到`libime`目录  
 ```sh
 sudo cp wb98.main.dict /usr/share/libime/
 ```
-3. 将配置文件拷贝到`fcitx5`下的输入法目录
+4. 将配置文件拷贝到`fcitx5`下的输入法目录
+
 ```sh
 sudo cp wb98.conf  /usr/share/fcitx5/inputmethod/
 ```
-4. 重启`fcitx5`输入法  
+5. 重启`fcitx5`输入法  
 
   然后在`fcitx5` 配置菜单中添加**五笔九八**输入法即可。
 
-5. 附赠一个输入法图标  
-  ![](org.fcitx.Fcitx5.fcitx-wb98.png)  
-  `Debian + KDE`系统，可将此图更名为`org.fcitx.Fcitx5.fcitx-wb98.png`，拷贝到`/usr/share/icons/hicolor/48x48/apps/`目录下，然后在`wb98.conf`配置文件中修改`Icon=fcitx-wb98`，重启输入法即可刷新托盘图标。
+6. 附赠一个输入法图标  
+   ![](org.fcitx.Fcitx5.fcitx-wb98.png)  
+     `Debian + KDE`系统，可将此图更名为`org.fcitx.Fcitx5.fcitx-wb98.png`，拷贝到`/usr/share/icons/hicolor/48x48/apps/`目录下，然后在`wb98.conf`配置文件中修改`Icon=fcitx-wb98`，重启输入法即可刷新托盘图标。
